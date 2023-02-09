@@ -1,8 +1,10 @@
 #include <iostream>
 using namespace std;
-class cvector{
+class ccvector{
+public:
     double * arr = nullptr;
     int sz = 0;
+    int cap = 0;; 
 public:
     cvector() = default ;
     cvector(int n):arr(new double[n]),sz(n){}
